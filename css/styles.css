@@ -142,3 +142,36 @@ body {
         height: 60px; /* Reduce height for smaller screens */
     }
 }
+
+.inline-heading {
+    display: flex;
+    align-items: center; /* Vertically center-aligns icon and text */
+    gap: 8px; /* Space between icon and text */
+}
+
+.inline-heading h3 {
+    margin: 0; /* Remove any default margin on the heading */
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.inline-heading .file-icon {
+    font-size: 1.5rem; /* Adjust icon size to match the heading */
+    color: #007bff; /* Optional: color for icon */
+}
+
+.heading-underline {
+    display: inline-block; /* Prevents full-width underline */
+    position: relative;
+    margin: 0;
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.heading-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px; /* Adjust distance of underline from text */
+    height: 2px; /* Adjust thickness of underline */
+    background-color: #007bff; /* Choose your underline color */
+}
