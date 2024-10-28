@@ -1,35 +1,82 @@
-/* Custom Styles */
+/* Basic Body Styling */
 body {
+    background-color: #f8f9fa;
     font-family: Arial, sans-serif;
 }
 
-header {
-    background: #007bff;
-    color: #fff;
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #007bff, #6f42c1);
+    color: white;
+    margin-bottom: 30px;
+    border-bottom: 5px solid #6f42c1;
 }
 
+.header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* File Section Styling */
 .file-section {
-    margin-bottom: 2rem;
+    padding: 30px 0;
 }
 
 .file-section h3 {
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
     color: #007bff;
 }
 
-.file-list li {
-    list-style: none;
-    padding: 8px 0;
+/* File Card Styling */
+.file-card {
+    transition: 0.3s;
+    border: none;
+    background-color: #ffffff;
 }
 
-.file-list li a {
-    text-decoration: none;
+.file-card-last {
+    height: 230px;
+    display: flex;
+}
+
+.file-card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.file-icon {
+    font-size: 2em;
     color: #007bff;
-    font-weight: bold;
 }
 
-.file-list li a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+.btn-download {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-download:hover {
+    background-color: #218838;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .ad-banner img {
@@ -48,4 +95,50 @@ header {
     font-weight: bold;
     border: 1px solid #ddd;
     border-radius: 8px;
+}
+
+/* Ad Container Styling */
+.ad-container {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px dashed #6c757d;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 150px;
+    display: flex;
+}
+
+
+/* Optional: Ad Title Styling */
+.card-title {
+    font-size: 1.25rem;
+    color: #007bff;
+}
+/* Banner Ad Container */
+.banner-ad-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Light background for visibility */
+    padding: 10px; /* Add padding for better spacing */
+    border: 1px dashed #ccc; /* Optional: add a border for visibility */
+}
+.banner-ad {
+    width: 100%;
+    max-width: 100%; /* Ensures it spans the entire section width */
+    text-align: center;
+}
+
+/* Optional: Adjust height for different screen sizes */
+@media (min-width: 768px) {
+    .banner-ad ins.adsbygoogle {
+        height: 90px; /* Standard banner height */
+    }
+}
+@media (max-width: 768px) {
+    .banner-ad ins.adsbygoogle {
+        height: 60px; /* Reduce height for smaller screens */
+    }
 }
